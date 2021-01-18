@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes Text-Appear {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(5);
+  }
+}
+
+@keyframes Text-Opacity {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+

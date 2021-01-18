@@ -13,11 +13,17 @@ export const Question1 = ({setsSelectedAnswer, selectedAnswer}) => {
     }
 
     return (
-        <Grid container spacing={4} >
+    <Grid container spacing={4} >
+        <Grid item xs={12}>
+            <Typography variant="h6">
+            Which languages do we use at Simplyk ?
+            </Typography>
+            
+        </Grid>
         <Grid item xs={1}/>
         <Grid item xs={3} onClick={() => select(1)}>
             <ClickableCard  selected={selectedAnswer === 1}>
-                <Typography   variant="h4" gutterBottom>
+                <Typography   variant="h4" >
                 React<br/>
                 Typescript<br/>
                 SQL
@@ -26,7 +32,7 @@ export const Question1 = ({setsSelectedAnswer, selectedAnswer}) => {
         </Grid>
         <Grid item xs={3} onClick={() => select(2)}>
             <ClickableCard  selected={selectedAnswer === 2}>
-                <Typography   variant="h4" gutterBottom>
+                <Typography   variant="h4" >
                 Html<br/>
                 Javascript<br/>
                 SQL
@@ -35,7 +41,7 @@ export const Question1 = ({setsSelectedAnswer, selectedAnswer}) => {
         </Grid>
         <Grid item xs={3} onClick={() => select(3)}>
         <ClickableCard selected={selectedAnswer === 3}>
-                <Typography   variant="h4" gutterBottom>
+                <Typography   variant="h4" >
                 React<br/>
                 Python<br/>
                 MongoDb
