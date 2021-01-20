@@ -8,14 +8,30 @@ import {Question4} from "../Question4/Question4"
 import {Question5} from "../Question5/Question5"
 import {Question6} from "../Question6/Question6"
 import {Question7} from "../Question7/Question7"
+import {Question8} from "../Question8/Question8"
 import { useStyles } from "./useStyles"
+
+const randomInputData = [
+    ["Canadon", "something", "jonhattan", "jeremie"],
+    ["Francois", "Tibaut", "Canadon", "benjamin", "Yolan"],
+    ["Tali", "Sam", "Florence", "Canadon", "Rowan", "Myriam", "Lola"],
+    ["Michel", "Michel", "Canadon", "Michel", "Michel", "Michel"],
+    ["Beteau", "Maison", "Canadon", "Couloir", "piscine"],
+    ["eau", "bruit", "Canadon", "rhinoceros", "panthere", "riz"],
+    ["vitre", "tomate", "Canadon", "jean", "helper"],
+    ["javascript", "cplus", "Canadon", "python", "java", "go"],
+    ["cerise", "pomme", "Canadon", "poire", "fraise", "framboise"],
+    ["david", "russia", "Canadon", "marseille", "Paris"],
+    ["bruceLee", "Canadon", "karate", "nunchaku"]
+]
 
 
 export const AppContent = () => {
 
+    const inputData = randomInputData[Math.floor(Math.random()*10)]
+
     const checkJavascriptQuestion = (selectedAnswer) => {
         try {
-            const inputData = ["hello", "something", "Canadon", "goodbye"]
             const result  = eval(selectedAnswer)
             console.log(result)
             if(result && result.includes("Simplyk") && !result.includes("Canadon")){
@@ -29,6 +45,19 @@ export const AppContent = () => {
         }
     }
 
+    const AnswerCssPuzzle = [0,0,0,150,0,300, 150,0,150,150,150,300]
+
+    const checkCssQuestion = (selectedAnswer) => {
+        console.log(selectedAnswer)
+        if(selectedAnswer.every((value, index) => parseInt(value) === AnswerCssPuzzle[index])){
+            return true;
+        }
+        lostAction();
+            return null;
+    }
+
+    
+
     const Answers = [
         {
             validation : (value) => {return checkJavascriptQuestion(value)}, 
@@ -36,6 +65,11 @@ export const AppContent = () => {
             penalty : -1, 
             allowMultipleCheck : true,
             component : () => <Question6 setsSelectedAnswer={setsSelectedAnswer} selectedAnswer={selectedAnswer}/>},
+        {
+            validation : (value) => {return checkCssQuestion(value)}, 
+            points : 10, 
+            penalty : -1, 
+            component : () => <Question8 setsSelectedAnswer={setsSelectedAnswer} selectedAnswer={selectedAnswer}/>},
         {
             validation : (value) => {return value === 1}, 
             points : 1, 
@@ -66,7 +100,9 @@ export const AppContent = () => {
             validation : (value) => {return [1, 2, 3, 4, 5].includes(value)}, 
             points : 5, 
             penalty : -1, 
-            component : () => <Question7 setsSelectedAnswer={setsSelectedAnswer} selectedAnswer={selectedAnswer}/>}]
+            component : () => <Question7 setsSelectedAnswer={setsSelectedAnswer} selectedAnswer={selectedAnswer}/>},
+        
+        ]
 
     const classes = useStyles()
 

@@ -1,16 +1,16 @@
 import * as React from "react"
-import { Card, Typography, CardContent, Grid, makeStyles, Divider, Button, TextField } from "@material-ui/core"
-import { ClickableCard } from "../ClickableCard/ClickableCard"
+import { Card, Typography, Grid,  TextField } from "@material-ui/core"
 
 
-const scripts = ["const canadonIndex = inputData.indexOf('Canadon');", "inputData.splice(canadonIndex, 1);", "inputData.unshift('Simplyk');", "return inputData;"]
+const scripts = ["inputData.unshift('Simplyk');", "return inputData;", "const canadonIndex = inputData.indexOf('Canadon');", "inputData.splice(canadonIndex, 1);"]
 
 const codePlaceholder = `function executeScript(){
-    return "simplyk"
-
-
+    
+    
+    
+    
 }
-executeScript()
+executeScript();
 `
 
 export const Question6 = ({setsSelectedAnswer, selectedAnswer}) => {
@@ -25,22 +25,28 @@ export const Question6 = ({setsSelectedAnswer, selectedAnswer}) => {
     <Grid container spacing={2} >
         <Grid item xs={12}>
             <Typography variant="h6">
-            Write an algorithms to find the word "Canadon" of array inputData[], delete it, and add the word "Simplyk at the begining of the array" 
+            Write an algorithms to find the word "Canadon" of array inputData[], delete it, and add the word "Simplyk" at the begining of the array
             </Typography>
         </Grid>
         {scripts.map((script) => {
             return (
-                <Grid item xs={12}>
+                <Grid container justify="center" alignItems="center">
+                    <Card style={{padding : 5, margin:5}}>
+
                     {script}
+
+                    </Card>
                 </Grid>
+                
+                
             )
         })}
  
 
         <Grid container justify="center" alignItems="center">
             <Card style={{padding:20}}>
-                <Grid item xs={12}>
-                    <Typography variant="body2" gutterBottom>
+                <Grid item xs={12} style={{textAlign:"left", marginLeft :15, color:"grey"}}>
+                    <Typography variant="body1" gutterBottom>
                     const inputData = ["Something", ... , "Canadon", ... , "SomethingElse"]
                     </Typography>
                     

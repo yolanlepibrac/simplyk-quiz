@@ -25,7 +25,7 @@ export const Question3 = ({setsSelectedAnswer, selectedAnswer}) => {
                 <ClickableCard  selected={selectedAnswer === 1} >
                     <Grid container style={{padding:20}}>
                         <Grid item xs={2}>
-                            <img src="https://lh3.googleusercontent.com/proxy/twr31lAzbcmJQeV3MejwpMt0vENjRWMScZBC9Q47DcmBgnmvm3J-taQ_g3ecNwZKzCfXOGNls8QmZoYVt4tqlZDYafOdFjqeDKYb36FB1_p_6j0QW0IbBp1pnQJfimdlSj53" height="70"/>
+                            <img src="https://lh3.googleusercontent.com/proxy/DlFR-bDV1kmF-4Bst2yI_JhF7v7X-6mCqS9jcCoy0zPCGUsufjnBC3JsfQgW_mudqcQTNr6gmsYXYVxgUhdGrFSFao7k6pjhaGmxs6XD4S5Ne0lhu8sxQEatypP-iI2log" height="70"/>
                             <Typography   variant="h4" >
                                 backend 
                             </Typography>
@@ -68,7 +68,7 @@ export const Question3 = ({setsSelectedAnswer, selectedAnswer}) => {
                             <img src="https://charbase.com/images/glyph/8646" height="70"/>
                         </Grid>
                         <Grid item xs={2}>
-                            <img src="https://lh3.googleusercontent.com/proxy/twr31lAzbcmJQeV3MejwpMt0vENjRWMScZBC9Q47DcmBgnmvm3J-taQ_g3ecNwZKzCfXOGNls8QmZoYVt4tqlZDYafOdFjqeDKYb36FB1_p_6j0QW0IbBp1pnQJfimdlSj53" height="70"/>
+                            <img src="https://lh3.googleusercontent.com/proxy/DlFR-bDV1kmF-4Bst2yI_JhF7v7X-6mCqS9jcCoy0zPCGUsufjnBC3JsfQgW_mudqcQTNr6gmsYXYVxgUhdGrFSFao7k6pjhaGmxs6XD4S5Ne0lhu8sxQEatypP-iI2log" height="70"/>
                             <Typography   variant="h4" >
                                 backend 
                             </Typography>
@@ -110,7 +110,7 @@ export const Question3 = ({setsSelectedAnswer, selectedAnswer}) => {
                             <img src="https://charbase.com/images/glyph/8646" height="70"/>
                         </Grid>
                         <Grid item xs={2}>
-                            <img src="https://lh3.googleusercontent.com/proxy/twr31lAzbcmJQeV3MejwpMt0vENjRWMScZBC9Q47DcmBgnmvm3J-taQ_g3ecNwZKzCfXOGNls8QmZoYVt4tqlZDYafOdFjqeDKYb36FB1_p_6j0QW0IbBp1pnQJfimdlSj53" height="70"/>
+                            <img src="https://lh3.googleusercontent.com/proxy/DlFR-bDV1kmF-4Bst2yI_JhF7v7X-6mCqS9jcCoy0zPCGUsufjnBC3JsfQgW_mudqcQTNr6gmsYXYVxgUhdGrFSFao7k6pjhaGmxs6XD4S5Ne0lhu8sxQEatypP-iI2log" height="70"/>
                             <Typography   variant="h4" >
                                 backend 
                             </Typography>
@@ -152,7 +152,7 @@ export const Question3 = ({setsSelectedAnswer, selectedAnswer}) => {
                         <img src="https://charbase.com/images/glyph/8646" height="70"/>
                     </Grid>
                     <Grid item xs={2}>
-                        <img src="https://lh3.googleusercontent.com/proxy/twr31lAzbcmJQeV3MejwpMt0vENjRWMScZBC9Q47DcmBgnmvm3J-taQ_g3ecNwZKzCfXOGNls8QmZoYVt4tqlZDYafOdFjqeDKYb36FB1_p_6j0QW0IbBp1pnQJfimdlSj53" height="70"/>
+                        <img src="https://lh3.googleusercontent.com/proxy/DlFR-bDV1kmF-4Bst2yI_JhF7v7X-6mCqS9jcCoy0zPCGUsufjnBC3JsfQgW_mudqcQTNr6gmsYXYVxgUhdGrFSFao7k6pjhaGmxs6XD4S5Ne0lhu8sxQEatypP-iI2log" height="70"/>
                         <Typography   variant="h4" >
                             backend 
                         </Typography>

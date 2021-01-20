@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Card, Typography, CardContent, Grid, makeStyles, Divider, Button } from "@material-ui/core"
+import {  Typography, Grid, makeStyles, Divider, Button } from "@material-ui/core"
 import { ClickableCard } from "../ClickableCard/ClickableCard"
 
 export const Question7 = ({setsSelectedAnswer, selectedAnswer}) => {
@@ -17,7 +17,7 @@ export const Question7 = ({setsSelectedAnswer, selectedAnswer}) => {
         <Grid container spacing={4} >
             <Grid item xs={12}>
                 <Typography variant="h6">
-                Who is the creator of Javascript ?
+                Who is the best teaching code ?
                 </Typography>
             </Grid>
         <Grid item xs={1}/>
