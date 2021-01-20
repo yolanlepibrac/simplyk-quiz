@@ -13,7 +13,7 @@ export const Question2 = ({setsSelectedAnswer, selectedAnswer}) => {
     }
 
     return (
-        <Grid container spacing={4} >
+        <Grid container spacing={2} >
             <Grid item xs={12}>
             <Typography variant="h6">
             Who is the creator of Javascript ?
@@ -24,9 +24,9 @@ export const Question2 = ({setsSelectedAnswer, selectedAnswer}) => {
         <Grid item xs={3} onClick={() => select(1)}>
             <ClickableCard selected={selectedAnswer === 1}>
                 <Typography   variant="h4" gutterBottom>
-                    Dennis Ritchie
+                    Dennis <br/>Ritchie
                 </Typography>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Dennis_Ritchie_2011.jpg/260px-Dennis_Ritchie_2011.jpg" width="100%" style={{maxHeight:200}}/>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Dennis_Ritchie_2011.jpg/260px-Dennis_Ritchie_2011.jpg" width="100%" style={{maxHeight:200, maxWidth:200}}/>
             </ClickableCard>
         </Grid>
         <Grid item xs={3} onClick={() => select(2)}>
@@ -34,15 +34,15 @@ export const Question2 = ({setsSelectedAnswer, selectedAnswer}) => {
                 <Typography   variant="h4" gutterBottom>
                     Elon <br/>musk
                 </Typography>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Elon_Musk_2015.jpg/220px-Elon_Musk_2015.jpg" width="100%" style={{maxHeight:200}}/>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Elon_Musk_2015.jpg/220px-Elon_Musk_2015.jpg" width="100%" style={{maxHeight:200, maxWidth:200}}/>
             </ClickableCard>
         </Grid>
         <Grid item xs={3} onClick={() => select(3)}>
             <ClickableCard selected={selectedAnswer === 3}>
                 <Typography   variant="h4" gutterBottom>
-                Bjarne Stroustrup
+                Bjarne <br/>Stroustrup
                 </Typography>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Bjarne-stroustrup_%28cropped%29.jpg" width="100%" style={{maxHeight:200}}/>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Bjarne-stroustrup_%28cropped%29.jpg" width="100%" style={{maxHeight:200, maxWidth:200}}/>
             </ClickableCard>
         </Grid>
         <Grid item xs={1}/>
@@ -51,9 +51,9 @@ export const Question2 = ({setsSelectedAnswer, selectedAnswer}) => {
         <Grid item xs={3} onClick={() => select(4)}>
             <ClickableCard  selected={selectedAnswer === 4}>
                 <Typography   variant="h4" gutterBottom>
-                    Brendan Eich
+                    Brendan <br/>Eich
                 </Typography>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg" width="100%" style={{maxHeight:200}}/>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg" width="100%" style={{maxHeight:200, maxWidth:200}}/>
                 
             </ClickableCard>
         </Grid>
@@ -61,17 +61,17 @@ export const Question2 = ({setsSelectedAnswer, selectedAnswer}) => {
             <ClickableCard selected={selectedAnswer === 5}>
                 <Typography   variant="h4" gutterBottom>
                    
-                    Richard Gotainer
+                    Richard <br/>Gotainer
                 </Typography>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Richard_gotainer.jpg" width="100%" style={{maxHeight:200}}/>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Richard_gotainer.jpg" width="100%" style={{maxHeight:200, maxWidth:200}}/>
             </ClickableCard>
         </Grid>
         <Grid item xs={3} onClick={() => select(6)}>
             <ClickableCard selected={selectedAnswer === 6}>
                 <Typography   variant="h4" gutterBottom>
-                    Linus Torvalds
+                    Linus <br/>Torvalds
                 </Typography>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg/240px-LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg" width="100%" style={{maxHeight:200}}/>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg/240px-LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg" width="100%" style={{maxHeight:200, maxWidth:200}}/>
             </ClickableCard>
         </Grid>
         

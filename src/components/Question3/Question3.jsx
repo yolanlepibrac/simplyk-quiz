@@ -14,7 +14,7 @@ export const Question3 = ({setsSelectedAnswer, selectedAnswer}) => {
     }
 
     return (
-        <Grid container spacing={4} >
+        <Grid container spacing={2} >
             <Grid item xs={12}>
                 <Typography variant="h6">
                 Which architecture do we use in web ?

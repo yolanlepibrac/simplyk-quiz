@@ -13,7 +13,7 @@ export const Question4 = ({setsSelectedAnswer, selectedAnswer}) => {
     }
 
     return (
-    <Grid container spacing={4} >
+    <Grid container spacing={2} >
         <Grid item xs={12}>
             <Typography variant="h6">
             Which sentence is SQL language ?
