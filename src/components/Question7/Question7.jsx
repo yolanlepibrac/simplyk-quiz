@@ -17,7 +17,7 @@ export const Question7 = ({setsSelectedAnswer, selectedAnswer}) => {
         <Grid container spacing={4} >
             <Grid item xs={12}>
                 <Typography variant="h6">
-                Who is the best teaching code ?
+                Who is the best dev ?
                 </Typography>
             </Grid>
         <Grid item xs={1}/>

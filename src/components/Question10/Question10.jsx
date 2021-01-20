@@ -45,9 +45,9 @@ export const Question10 = ({setsSelectedAnswer, puzzleCabbageError}) => {
             Finish the game : cabbage, goat and wolf
             </Typography>
         </Grid>
-        <Grid item xs={6} style={{textAlign:"center", marginLeft:30}}>
+        <Grid item xs={6} style={{textAlign:"center", paddingLeft:30}}>
             <Grid container justify="center">
-                <Grid item xs={12}>
+                <Grid item xs={12} >
                     <Typography variant="h6">
                         Instructions
                     </Typography>
@@ -100,6 +100,19 @@ export const Question10 = ({setsSelectedAnswer, puzzleCabbageError}) => {
 
             </Grid>
             
+        </Grid>
+
+        <Grid item xs={6} style={{textAlign:"center", padding:20, position:"relative", maxHeight:500, overflow:"hidden"}}>
+
+            <div style={{position:"relative"}}>
+                <img src="./assets/images/river.jpg" height="500" width="100%"/>
+                <img src="./assets/images/berger.png" width="100" style={{position: "absolute", top: 200, left:0}}/>
+                <img src="./assets/images/loup.png" width="100" style={{position: "absolute", top: 250, left:50}}/>
+                <img src="./assets/images/mouton.png" width="50" style={{position: "absolute", top: 250, left:130}}/>
+                <img src="./assets/images/choux.png" width="50" style={{position: "absolute", top: 250, left:170}}/>
+                <img src="./assets/images/barque.png" width="220" style={{position: "absolute", top: 280, left:70}}/>
+            </div>
+
         </Grid>
         
     </Grid>

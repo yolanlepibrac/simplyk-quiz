@@ -188,22 +188,21 @@ export const AppContent = () => {
             penalty : -1, 
             component : () => <Question5 setsSelectedAnswer={setsSelectedAnswer} selectedAnswer={selectedAnswer}/>},
         {
-            validation : (value) => {return checkCssQuestion(value)}, 
+            validation : (value) => {return value === 5}, 
             points : 10, 
             penalty : -1, 
-            component : () => <Question8 setsSelectedAnswer={setsSelectedAnswer} selectedAnswer={selectedAnswer}/>},
+            component : () => <Question9 setsSelectedAnswer={setsSelectedAnswer} selectedAnswer={selectedAnswer}/>},
         {
             validation : (value) => {return checkJavascriptQuestion(value)}, 
             points : 20, 
             penalty : -1, 
             allowMultipleCheck : true,
             component : () => <Question6 setsSelectedAnswer={setsSelectedAnswer} selectedAnswer={selectedAnswer}/>},
-            
         {
-            validation : (value) => {return value === 5}, 
+            validation : (value) => {return checkCssQuestion(value)}, 
             points : 100, 
             penalty : -1, 
-            component : () => <Question9 setsSelectedAnswer={setsSelectedAnswer} selectedAnswer={selectedAnswer}/>},
+            component : () => <Question8 setsSelectedAnswer={setsSelectedAnswer} selectedAnswer={selectedAnswer}/>},
         {
             validation : (value) => {return testPuzzleCabbage(value)}, 
             points : 200, 
@@ -256,14 +255,14 @@ export const AppContent = () => {
         setWin(true)
         setTimeout(() => {
             setWin(false)
-        }, 2000)
+        }, 1000)
     }
 
     const lostAction = () => {
         setLost(true)
         setTimeout(() => {
             setLost(false)
-        }, 2000)
+        }, 1000)
     }
 
     return (
@@ -287,20 +286,47 @@ export const AppContent = () => {
                     </Typography>
                 </div>
             }
-            <div>
-                <h1>{`Question ${stepCounter+1}`}</h1>
-                <Divider/>
-            </div>
-            <Grid className={classes.step}>
-                {Answers[stepCounter] && Answers[stepCounter].component()}
-            </Grid>
-
-            <Grid  className={classes.bottom}>
-                <Divider/>
-                <Grid container justify="center" alignItems="center" className={classes.bottom}>
-                    <Button variant="contained" disabled={!selectedAnswer } onClick={validate}>Validate</Button>
+            {Answers[stepCounter] && 
+                <div>
+                    <h1>{`Question ${stepCounter+1}`}</h1>
+                    <Divider/>
+                </div>
+            }
+            {Answers[stepCounter] && 
+                <Grid className={classes.step}>
+                    {Answers[stepCounter].component()}
                 </Grid>
-            </Grid> 
+            }
+            {!Answers[stepCounter] &&
+                <Grid item xs={12}>
+                    <Grid style={{position:"relative", textAlign:"center"}} container justify="center">
+                        <Grid item xs={12} container justify="center">
+                            <Typography style={{ color:"#A1EDCA", fontSize:150, position:"relative", zIndex:100}}>
+                                YOU WIN
+                            </Typography>
+                        </Grid>
+                        <Grid  item xs={12} container justify="center">
+                        
+                            <Typography style={{ color:"black", fontSize:100, position:"relative", zIndex:50}}>
+                                {`Score : ${score}`}
+                            </Typography>
+                        </Grid>
+                        
+                        <img src="./assets/images/win.png" style={{width:800, maxWidth:"100%", position:"absolute", top:50, left:0}}/>
+
+                    </Grid>
+                </Grid>
+            }
+
+
+            {Answers[stepCounter] && 
+                <Grid  className={classes.bottom}>
+                    <Divider/>
+                    <Grid container justify="center" alignItems="center" className={classes.bottom}>
+                        <Button variant="contained" disabled={!selectedAnswer} onClick={validate}>Validate</Button>
+                    </Grid>
+                </Grid> 
+            }  
             
         </div>
     )

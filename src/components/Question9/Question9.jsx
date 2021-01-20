@@ -33,7 +33,7 @@ export const Question9 = ({setsSelectedAnswer, selectedAnswer}) => {
         <Grid item xs={10} onClick={() => select(2)}>
             <ClickableCard  selected={selectedAnswer === 2}>
                 <Typography   variant="h6" >
-                A recursive blueprint which allowed multi-performed state on production templating 
+                A recursive blueprint which allow multi-performed state on production templating 
                 </Typography>
             </ClickableCard>
         </Grid>
@@ -42,7 +42,7 @@ export const Question9 = ({setsSelectedAnswer, selectedAnswer}) => {
         <Grid item xs={10} onClick={() => select(3)}>
             <ClickableCard selected={selectedAnswer === 3}>
                 <Typography   variant="h6" >
-                A coercive serverless environnement producing retroactive plugin in database EKU system
+                A coercive serverless environnement producing retroactive storage in database EKU system
                 </Typography>
             </ClickableCard>
         </Grid>

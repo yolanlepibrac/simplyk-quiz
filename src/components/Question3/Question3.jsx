@@ -25,25 +25,25 @@ export const Question3 = ({setsSelectedAnswer, selectedAnswer}) => {
                 <ClickableCard  selected={selectedAnswer === 1} >
                     <Grid container style={{padding:20}}>
                         <Grid item xs={2}>
-                            <img src="https://lh3.googleusercontent.com/proxy/DlFR-bDV1kmF-4Bst2yI_JhF7v7X-6mCqS9jcCoy0zPCGUsufjnBC3JsfQgW_mudqcQTNr6gmsYXYVxgUhdGrFSFao7k6pjhaGmxs6XD4S5Ne0lhu8sxQEatypP-iI2log" height="70"/>
+                            <img src="./assets/images/server.png" height="70"/>
                             <Typography   variant="h4" >
                                 backend 
                             </Typography>
                         </Grid>
                         <Grid item xs={3}>
-                            <img src="https://charbase.com/images/glyph/8646" height="70"/>
+                            <img src="./assets/images/arrows.png" height="70"/>
                         </Grid>
                         <Grid item xs={2}>
-                            <img src="https://cdn.pixabay.com/photo/2014/04/02/10/13/computer-303130_1280.png" height="70"/>
+                            <img src="./assets/images/computer.webp" height="70"/>
                             <Typography   variant="h4" >
                                 frontend 
                             </Typography>
                         </Grid>
                         <Grid item xs={3}>
-                            <img src="https://charbase.com/images/glyph/8646" height="70"/>
+                            <img src="./assets/images/arrows.png" height="70"/>
                         </Grid>
                         <Grid item xs={2}>
-                            <img src="https://www.icone-png.com/png/12/12063.png" height="70"/>
+                            <img src="./assets/images/db.png" height="70"/>
                             <Typography   variant="h4" >
                                 database 
                             </Typography>
@@ -59,25 +59,25 @@ export const Question3 = ({setsSelectedAnswer, selectedAnswer}) => {
                     
                     <Grid container style={{padding:20}}>
                         <Grid item xs={2}>
-                            <img src="https://cdn.pixabay.com/photo/2014/04/02/10/13/computer-303130_1280.png" height="70"/>
+                            <img src="./assets/images/computer.webp" height="70"/>
                             <Typography   variant="h4" >
                                 frontend 
                             </Typography>
                         </Grid>
                         <Grid item xs={3}>
-                            <img src="https://charbase.com/images/glyph/8646" height="70"/>
+                            <img src="./assets/images/arrows.png" height="70"/>
                         </Grid>
                         <Grid item xs={2}>
-                            <img src="https://lh3.googleusercontent.com/proxy/DlFR-bDV1kmF-4Bst2yI_JhF7v7X-6mCqS9jcCoy0zPCGUsufjnBC3JsfQgW_mudqcQTNr6gmsYXYVxgUhdGrFSFao7k6pjhaGmxs6XD4S5Ne0lhu8sxQEatypP-iI2log" height="70"/>
+                            <img src="./assets/images/server.png" height="70"/>
                             <Typography   variant="h4" >
                                 backend 
                             </Typography>
                         </Grid>
                         <Grid item xs={3}>
-                            <img src="https://charbase.com/images/glyph/8646" height="70"/>
+                            <img src="./assets/images/arrows.png" height="70"/>
                         </Grid>
                         <Grid item xs={2}>
-                            <img src="https://www.icone-png.com/png/12/12063.png" height="70"/>
+                            <img src="./assets/images/db.png" height="70"/>
                             <Typography   variant="h4" >
                                 database 
                             </Typography>
@@ -92,25 +92,25 @@ export const Question3 = ({setsSelectedAnswer, selectedAnswer}) => {
             <ClickableCard selected={selectedAnswer === 3}>
                 <Grid container style={{padding:20}}>
                         <Grid item xs={2}>
-                            <img src="https://cdn.pixabay.com/photo/2014/04/02/10/13/computer-303130_1280.png" height="70"/>
+                            <img src="./assets/images/computer.webp" height="70"/>
                             <Typography   variant="h4" >
                                 frontend 
                             </Typography>
                         </Grid>
                         <Grid item xs={3}>
-                            <img src="https://charbase.com/images/glyph/8646" height="70"/>
+                            <img src="./assets/images/arrows.png" height="70"/>
                         </Grid>
                         <Grid item xs={2}>
-                            <img src="https://www.icone-png.com/png/12/12063.png" height="70"/>
+                            <img src="./assets/images/db.png" height="70"/>
                             <Typography   variant="h4" >
                                 database 
                             </Typography>
                         </Grid>
                         <Grid item xs={3}>
-                            <img src="https://charbase.com/images/glyph/8646" height="70"/>
+                            <img src="./assets/images/arrows.png" height="70"/>
                         </Grid>
                         <Grid item xs={2}>
-                            <img src="https://lh3.googleusercontent.com/proxy/DlFR-bDV1kmF-4Bst2yI_JhF7v7X-6mCqS9jcCoy0zPCGUsufjnBC3JsfQgW_mudqcQTNr6gmsYXYVxgUhdGrFSFao7k6pjhaGmxs6XD4S5Ne0lhu8sxQEatypP-iI2log" height="70"/>
+                            <img src="./assets/images/server.png" height="70"/>
                             <Typography   variant="h4" >
                                 backend 
                             </Typography>
@@ -125,34 +125,34 @@ export const Question3 = ({setsSelectedAnswer, selectedAnswer}) => {
                 
                 <Grid container style={{padding:20}}>
                     <Grid item xs={2}>
-                        <img src="https://cdn.pixabay.com/photo/2014/04/02/10/13/computer-303130_1280.png" height="70"/>
+                        <img src="./assets/images/computer.webp" height="70"/>
                         <Typography   variant="h4" >
                             frontend 
                         </Typography>
                     </Grid>
                     <Grid item xs={1}>
-                        <img src="https://charbase.com/images/glyph/8646" height="70"/>
+                        <img src="./assets/images/arrows.png" height="70"/>
                     </Grid>
                     <Grid item xs={2}>
-                        <img src="https://www.icone-png.com/png/12/12063.png" height="70"/>
+                        <img src="./assets/images/db.png" height="70"/>
                         <Typography   variant="h4" >
                             database 
                         </Typography>
                     </Grid>
                     <Grid item xs={2}>
-                        <img src="https://charbase.com/images/glyph/8646" height="70"/>
+                        <img src="./assets/images/arrows.png" height="70"/>
                     </Grid>
                     <Grid item xs={2}>
-                        <img src="https://cdn.pixabay.com/photo/2014/04/02/10/13/computer-303130_1280.png" height="70"/>
+                        <img src="./assets/images/computer.webp" height="70"/>
                         <Typography   variant="h4" >
                             frontend 
                         </Typography>
                     </Grid>
                     <Grid item xs={1}>
-                        <img src="https://charbase.com/images/glyph/8646" height="70"/>
+                        <img src="./assets/images/arrows.png" height="70"/>
                     </Grid>
                     <Grid item xs={2}>
-                        <img src="https://lh3.googleusercontent.com/proxy/DlFR-bDV1kmF-4Bst2yI_JhF7v7X-6mCqS9jcCoy0zPCGUsufjnBC3JsfQgW_mudqcQTNr6gmsYXYVxgUhdGrFSFao7k6pjhaGmxs6XD4S5Ne0lhu8sxQEatypP-iI2log" height="70"/>
+                        <img src="./assets/images/server.png" height="70"/>
                         <Typography   variant="h4" >
                             backend 
                         </Typography>

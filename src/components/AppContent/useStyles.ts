@@ -32,7 +32,7 @@ export const useStyles = makeStyles({
         justifyContent:"center",
         alignItems:"center",
         color : 'green',
-        animation: `Text-Appear 2s linear infinite, Text-Opacity 2s linear infinite`
+        animation: `Text-Appear 1s linear infinite, Text-Opacity 1s linear infinite`
     },
     lost: {
         position:"absolute",
@@ -45,6 +45,6 @@ export const useStyles = makeStyles({
         justifyContent:"center",
         alignItems:"center",
         color : 'red',
-        animation: `Text-Appear 2s linear infinite, Text-Opacity 2s linear infinite`
+        animation: `Text-Appear 1s linear infinite, Text-Opacity 1s linear infinite`
     }
   });
