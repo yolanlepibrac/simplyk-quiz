@@ -1,8 +1,8 @@
 import * as React from "react"
-import {  Typography, Grid } from "@material-ui/core"
+import { Card, Typography, CardContent, Grid, makeStyles, Divider, Button } from "@material-ui/core"
 import { ClickableCard } from "../ClickableCard/ClickableCard"
 
-export const Question4 = ({setsSelectedAnswer, selectedAnswer}) => {
+export const Question9 = ({setsSelectedAnswer, selectedAnswer}) => {
 
     const select = (answer) => {
         if(selectedAnswer === answer){
@@ -16,7 +16,7 @@ export const Question4 = ({setsSelectedAnswer, selectedAnswer}) => {
     <Grid container spacing={2} >
         <Grid item xs={12}>
             <Typography variant="h6">
-            Which sentence is SQL language ?
+            What is REACT ?
             </Typography>
             
         </Grid>
@@ -24,7 +24,7 @@ export const Question4 = ({setsSelectedAnswer, selectedAnswer}) => {
         <Grid item xs={10} onClick={() => select(1)}>
             <ClickableCard  selected={selectedAnswer === 1}>
                 <Typography   variant="h6" >
-                {`const Simplyk = new Promise((resolve, reject) => resolve('DonationForm');)`}
+                A html streamer which parsed unformalized data, in firebase interpreter as laravel plugin
                 </Typography>
             </ClickableCard>
         </Grid>
@@ -33,7 +33,7 @@ export const Question4 = ({setsSelectedAnswer, selectedAnswer}) => {
         <Grid item xs={10} onClick={() => select(2)}>
             <ClickableCard  selected={selectedAnswer === 2}>
                 <Typography   variant="h6" >
-                {`SELECT * from DonationForm df LEFTJOIN Donation d ON d.donationFormId = df.id `}
+                A recursive blueprint which allowed multi-performed state on production templating 
                 </Typography>
             </ClickableCard>
         </Grid>
@@ -42,7 +42,7 @@ export const Question4 = ({setsSelectedAnswer, selectedAnswer}) => {
         <Grid item xs={10} onClick={() => select(3)}>
             <ClickableCard selected={selectedAnswer === 3}>
                 <Typography   variant="h6" >
-                {`ՋավաՍկրիպտ (անգլ.՝ SQL), ինտերպրետացվող սկրիպտային լեզու։ `}
+                A coercive serverless environnement producing retroactive plugin in database EKU system
                 </Typography>
             </ClickableCard>
         </Grid>
@@ -51,7 +51,7 @@ export const Question4 = ({setsSelectedAnswer, selectedAnswer}) => {
         <Grid item xs={10} onClick={() => select(4)}>
             <ClickableCard selected={selectedAnswer === 4}>
                 <Typography   variant="h6" >
-                {`int main(){std::cout << "Hello, I am SQL language!";}`}
+                A Python compiler which verify the Grabowsky emulations pattern 
                 </Typography>
             </ClickableCard>
         </Grid>
@@ -60,10 +60,7 @@ export const Question4 = ({setsSelectedAnswer, selectedAnswer}) => {
         <Grid item xs={10} onClick={() => select(5)}>
             <ClickableCard selected={selectedAnswer === 5}>
                 <Typography   variant="h6" >
-                {`def filtre_inferieur_a_5(l):
-                    def m(x): 
-                        return x < 5
-                    return filter(m, l)`}
+                A javascript framework transpiled by Webpack and Babel to be interpret by ES5
                 </Typography>
             </ClickableCard>
         </Grid>

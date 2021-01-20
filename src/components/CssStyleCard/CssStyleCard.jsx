@@ -12,7 +12,7 @@ export const CssStyleCard = ({setImageTop, setImageLeft, imageTop, imageLeft, va
                         {`#img${value} {`}
                     </Typography>
                     <Typography variant="body1" style={{marginLeft:20}}>
-                    position: absolute;
+                    {`position: absolute;`}
                     </Typography>
                     <Typography variant="body1" style={{marginLeft:20}}>
                     top: <TextField type="number" value={imageTop} onChange={(e) => setImageTop(e.target.value)} style={{width:120}}/>;
@@ -21,7 +21,7 @@ export const CssStyleCard = ({setImageTop, setImageLeft, imageTop, imageLeft, va
                     left: <TextField type="number" value={imageLeft} onChange={(e) => setImageLeft(e.target.value)} style={{width:120}}/>;
                     </Typography>
                     <Typography variant="body1">
-                    }
+                    {`}`}
                     </Typography>
             </Card>
          </Grid>
